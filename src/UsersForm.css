@@ -1,0 +1,8 @@
+.wrapper {
+    width: 50%;
+    height: fit-content;
+    border-radius: 15px;
+    border: 1px solid rgb(79, 48, 48);
+    padding: .7rem;
+    margin-left:2rem;
+}
