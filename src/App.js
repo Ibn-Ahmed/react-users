@@ -4,11 +4,11 @@ import UsersForm from "./UsersForm";
 
 
 function App() {
-  const [users,setUsers] = useState([{name:"John",email:"john@email.com",gen:"11"},{name:"Shami",email:"Shami@email.com",gen:"31"},{name:"Nathan",email:"Nathan@email.com",gen:"14"}])
+  const [users,setUsers] = useState([])
 
   const handleAddUser = (data)=>{
     console.log(data)
-    setUsers(data)
+    setUsers([...users, {name:data.name, email:data.email, gen:data.gen}])
   }
   return (
     <div>

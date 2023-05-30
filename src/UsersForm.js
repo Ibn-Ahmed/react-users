@@ -13,7 +13,7 @@ export default class UsersForm extends Component {
      submitForm = (e)=>{
          e.preventDefault();
         // console.log(this.state.name,this.state.email,this.state.gen)
-        this.props.user([this.state])
+        this.props.user({"name":this.state.name,"email":this.state.email, "gen":this.state.gen})
          this.setState({
              name:"",
              email:"",
